@@ -1,0 +1,64 @@
+html {
+  font-family: "Ojuju", sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+}
+
+form {
+  width: 100%;
+  text-align: end;
+}
+
+form select {
+  margin: 1rem;
+  padding: 5px;
+}
+
+#content {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content h1 {
+  font-size: 5rem;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+@keyframes slideOut {
+  from {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  to {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.outgoing {
+  animation: slideOut 500ms ease-out forwards;
+  -webkit-animation: slideOut 500ms ease-out forwards;
+}
+
+.incoming {
+  animation: slideIn 1s ease-out forwards;
+  -webkit-animation: slideIn 1s ease-out forwards;
+}
